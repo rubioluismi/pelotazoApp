@@ -1,11 +1,18 @@
 export class Usuario {
+    public id: number;
+    public nick: string;
+    public nombre: string;
+    public apellidos: string;
+    public pass: string;
+
     constructor(
-        public id: number,
-        public nick: string,
-        public nombre: string,
-        public apellidos: string,
-        public pass: string
+        id: number,
+        nick: string,
+        nombre: string,
+        apellidos: string,
+        pass: string
     ) {
 
     }
+
 }

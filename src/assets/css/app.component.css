@@ -1,0 +1,9 @@
+.campo{
+    color: #18A507;
+}
+
+.seleccionado{
+	font-weight: bold;
+	background-color: purple;
+	color: white;
+}
