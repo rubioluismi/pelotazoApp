@@ -1,11 +1,13 @@
+import { QuienesSomosComponent } from './quienesSomos.component';
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LoginComponent } from './login.component';
 
-const appRoutes: Routes = [ {
-    path: 'login', component: LoginComponent
-}];
+const appRoutes: Routes = [ { path: '', component: LoginComponent },
+    { path: 'login', component: LoginComponent },
+    { path: 'somos', component: QuienesSomosComponent }
+];
 
 // Y por último exportamos appRoutingProviders... que necesita angular
 export const appRoutingProviders: any[] = [];

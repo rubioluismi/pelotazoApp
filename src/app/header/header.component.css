@@ -1,0 +1,9 @@
+.campo{
+    background-color: rgb(14, 49, 14);
+    color: white;
+    padding: 30px;
+}
+
+input {
+    cursor: pointer;
+}

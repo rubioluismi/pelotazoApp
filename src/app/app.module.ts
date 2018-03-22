@@ -3,17 +3,19 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { CabeceraComponent } from './componentes/cabecera.component';
 import { LoginComponent } from './componentes/login.component';
+import { QuienesSomosComponent } from './componentes/quienesSomos.component';
 
 
 import { routing, appRoutingProviders } from './componentes/rutas.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CabeceraComponent,
-    LoginComponent
+    QuienesSomosComponent,
+    LoginComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,18 @@
+<span *ngIf="loginOut; then Hola else Adios"></span>
+
+<ng-template #Hola>
+  <div ng-if="nick.equals(null)" class="campo col-sm-12">
+   <div class="float-right"><h4>El usuario Logeado es: <b>{{nick}}</b></h4></div>
+    <h2> Bienvenidos al Pelotazo</h2>
+
+    <input type="button" value="LogOut" class="float-right" (click)="enviar()">
+  </div>   
+</ng-template>
+
+<ng-template #Adios>
+  <div ng-if="!nick.equals(null)" class="campo col-sm-12">
+    Introduzca su usuario o vaya al app-login
+    <input type="button" value="LogIn" class="float-right" (click)="enviarNick('LuisMi')">
+  </div>
+</ng-template>
+

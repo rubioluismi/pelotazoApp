@@ -8,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   })
 
   export class LoginComponent implements OnInit {
-
+    title = 'LOGIN - EL Pelotazo the GaMe';
     public usuario: Usuario;
 
     ngOnInit() {
         this.usuario.nick = 'LuisMi';
     }
+
   }
